@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-	    this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + camHeight, player.transform.position.z - camDistance);
+        transform.LookAt(player.transform);
 
         if (Input.GetKeyDown("e"))
         {
@@ -32,6 +32,7 @@ public class CameraFollow : MonoBehaviour {
     private void centerCam()
     {
         this.transform.rotation = player.transform.rotation;
+        this.transform.position = -player.transform.forward * camDistance;
         this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + camHeight, player.transform.position.z - camDistance);
     }
 }
