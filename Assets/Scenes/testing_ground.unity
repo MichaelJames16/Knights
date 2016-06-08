@@ -13224,6 +13224,7 @@ GameObject:
   - 124: {fileID: 1483570681}
   - 81: {fileID: 1483570680}
   - 114: {fileID: 1483570685}
+  - 114: {fileID: 1483570686}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13305,13 +13306,29 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483570679}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64875a054894b884d901f213b45984b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1537404536}
   free_move_cylinder: {fileID: 1251214169}
+--- !u!114 &1483570686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483570679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76806479d916a64aa03f8e3eba7912f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1537404542}
+  distance: 4
+  height: 10
+  rotationDamping: 0
+  heightDamping: 0
 --- !u!1 &1485287566
 GameObject:
   m_ObjectHideFlags: 0
@@ -13747,6 +13764,10 @@ Transform:
 --- !u!1 &1537404536 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
+  m_PrefabInternal: {fileID: 1494837960}
+--- !u!4 &1537404542 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
   m_PrefabInternal: {fileID: 1494837960}
 --- !u!1 &1540775078
 GameObject:
