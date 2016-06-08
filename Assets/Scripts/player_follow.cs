@@ -6,11 +6,12 @@ public class player_follow : MonoBehaviour {
     public GameObject player;
 
     private Vector3 lastPosition;
-    private float speed = 1f;
+    private float speed;
 
     void Update()
     {
         //lastPosition = transform.
+        speed = 5f;
     }
 
     void OnTriggerExit(Collider other)
